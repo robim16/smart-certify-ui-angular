@@ -1,10 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+// import { DataBindingsLatestComponent } from "../data-bindings-latest/data-bindings-latest.component";
 
 @Component({
-  selector: 'app-data-binding',
-  imports: [],
+  selector: 'app-data-bindings',
+  imports: [FormsModule, CommonModule],
   templateUrl: './data-binding.html',
-  styleUrl: './data-binding.css',
+  styleUrl: './data-binding.css'
 })
 export class DataBinding {
   // Interpolation and Property Binding
