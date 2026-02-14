@@ -22,5 +22,10 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/contact-us/contact-us')
             .then(m => m.ContactUs)
     },
+    {
+        path: 'courses',
+        loadComponent: () => import('./components/courses/courses')
+            .then(m => m.Courses)
+    },
     { path: '**', redirectTo: 'home' }
 ];
