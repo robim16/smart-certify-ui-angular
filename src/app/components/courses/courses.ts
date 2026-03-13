@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Course } from '../models/course';
+import { Course } from '../../models/course';
 import { CoursesService } from '../../services/courses';
 import { TechFilter } from "../tech-filter/tech-filter";
 import { CommonModule } from '@angular/common';
@@ -16,7 +16,7 @@ export class Courses implements OnInit {
   filteredCourses: Course[] = []
   onlyAvailableTest = false
 
-  technologySelected: string=''
+  technologySelected: string = ''
 
   techData = [
     { name: 'Angular', image: '../../../assets/technologies/angular.svg' },
@@ -58,7 +58,7 @@ export class Courses implements OnInit {
   }
 
   applyFilters() {
-    let filtered = this.courses.filter((course) => 
+    let filtered = this.courses.filter((course) =>
       course.title
         .toLowerCase()
         .startsWith(this.technologySelected.toLocaleLowerCase())
