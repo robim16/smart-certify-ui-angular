@@ -28,6 +28,8 @@
     "@angular/router": "^20.1.0",
     "@azure/msal-angular": "^5.0.4",
     "@azure/msal-browser": "^5.2.0",
+    "ngx-spinner": "^21.1.0",
+    "ngx-toastr": "^20.0.5",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
